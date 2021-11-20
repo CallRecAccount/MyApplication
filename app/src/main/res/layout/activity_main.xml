@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="70dip"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/host"
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="10dp"
+            android:background="#EAEAEA"
+            android:backgroundTint="#FBFFF7"
+            android:hint=" Хост" />
+
+        <EditText
+            android:id="@+id/login"
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="10dp"
+            android:background="#EAEAEA"
+            android:backgroundTint="#FBFFF7"
+            android:hint="Login" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="10dp"
+            android:background="#EAEAEA"
+            android:backgroundTint="#FBFFF7"
+            android:hint="Password"
+            android:password="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="10dp"
+            android:onClick="login"
+            android:text="Login" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
