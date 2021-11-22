@@ -6,53 +6,136 @@
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="136dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/dateField"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998">
 
-    <TextView
-        android:id="@+id/adressField"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/userField"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/important"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginBottom="10px"
+            app:srcCompat="@drawable/ic_baseline_local_fire_department_24" />
 
-    <TextView
-        android:id="@+id/userField"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/stateField"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/txtDocName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:text="nameDoc" />
 
-    <TextView
-        android:id="@+id/dateField"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="21dp"
-        app:layout_constraintBottom_toTopOf="@+id/adressField"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/dateField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
-    <TextView
-        android:id="@+id/stateField"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+            android:textSize="20dp"
+            tools:text="date" />
+
+
+        <TextView
+            android:id="@+id/master_name"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            tools:text="master" />
+
+
+        <TextView
+            android:id="@+id/stateField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            tools:text="state" />
+
+
+        <TextView
+            android:id="@+id/userField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="user" />
+
+        <TextView
+            android:id="@+id/adressField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            tools:text="adress" />
+
+
+        <TextView
+            android:id="@+id/fdGarantState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:text="garantState" />
+
+
+        <TextView
+            android:id="@+id/fdKetel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:text="ketel" />
+
+        <TextView
+            android:id="@+id/fdResason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            tools:text="resason" />
+
+
+        <TextView
+            android:id="@+id/fdDebt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#BF0000"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:text="debt" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:src="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userField" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

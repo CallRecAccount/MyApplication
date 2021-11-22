@@ -29,6 +29,7 @@ public class EmptyClient extends WebSocketClient {
     public EmptyClient(URI serverURI, Context context) {
         super(serverURI);
         Log.d(Constants.TAG,"new connection EmptyClient");
+        Log.d(Constants.TAG,"new connection EmptyClient");
         this.context=context;
         this.serverURI=serverURI;
     }
