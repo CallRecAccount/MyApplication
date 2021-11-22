@@ -105,6 +105,7 @@ ImageView imgConnect;
         load();
 
 
+
         Dexter.withContext(this).withPermission(Manifest.permission.CALL_PHONE).withListener(new PermissionListener() {
             @Override
             public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
@@ -124,7 +125,7 @@ ImageView imgConnect;
 
 
 
-        Dexter.withContext(this).withPermission(Manifest.permission.READ_CALL_LOG).withListener(new PermissionListener() {
+        Dexter.withContext(this).withPermission(Manifest.permission.READ_PHONE_STATE).withListener(new PermissionListener() {
             @Override
             public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
 

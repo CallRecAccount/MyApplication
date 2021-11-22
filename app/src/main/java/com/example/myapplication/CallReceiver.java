@@ -27,7 +27,7 @@ import java.util.Date;
     @Override
     public void onReceive(Context arg0, Intent arg1) {
 
-
+Log.e("test", "test");
         String code_device="";
         SharedPreferences sPref;
         sPref = PreferenceManager.getDefaultSharedPreferences(arg0.getApplicationContext());
